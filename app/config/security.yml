@@ -1,0 +1,66 @@
+# you can read more about security in the related section of the documentation
+# http://symfony.com/doc/current/book/security.html
+security:
+    # http://symfony.com/doc/current/book/security.html#encoding-the-user-s-password
+    encoders:
+        FOS\UserBundle\Model\UserInterface: sha512
+
+    # http://symfony.com/doc/current/book/security.html#hierarchical-roles
+    role_hierarchy:
+        ROLE_ADMIN:       ROLE_USER
+        ROLE_SUPER_ADMIN: ROLE_ADMIN
+
+    # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
+    providers:
+        fos_userbundle:
+            id: fos_user.user_provider.username
+
+    # the main part of the security, where you can set up firewalls
+    # for specific sections of your app
+    firewalls:
+        dev:
+            pattern:  ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        api_doc:
+            pattern: /api/doc
+            stateless: true
+            security: false
+            anonymous: true
+        api_home:
+            pattern: /api/$
+            stateless: true
+            security: false
+            anonymous: true
+        api_analytics:
+            pattern: ^/api/analytics
+            stateless: true
+            security: false
+            anonymous: true
+        api_public:
+            pattern: ^/api/public/
+            stateless: true
+            security: false
+            anonymous: true
+        api_mail_template:
+            pattern: ^/api/mail_template*
+            stateless: true
+            security: false
+            anonymous: true
+        main:
+            pattern: ^/
+            form_login:
+                provider: fos_userbundle
+                csrf_token_generator: security.csrf.token_manager
+                always_use_default_target_path: false
+                default_target_path:  /projects/decide
+            logout:       true
+            anonymous:    true
+
+    access_control:
+        - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/dashboard/, role: ROLE_USER }
+        - { path: ^/project, roles: IS_AUTHENTICATED_FULLY }
+        - { path: ^/profile/, role: ROLE_USER }
+        - { path: ^/api/*, roles: ROLE_USER }

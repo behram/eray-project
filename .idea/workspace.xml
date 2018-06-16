@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5148fabd-ab07-4a08-ba9e-29301e40b16e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/notifyLayout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/notifyLayout.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/doctrine.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/doctrine.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/parameters.yml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/parameters.yml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/routing/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/security.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/security.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gcm/gcm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Controller/ApiController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Controller/AppRestController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Controller/CreditRestController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Controller/EventRestController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Controller/FilterRestController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Controller/MailRestController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Controller/NotyBoxRestController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Controller/ProjectRestController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Controller/RegistrationRestController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Controller/ScheduleRestController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Controller/SmsRestController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Controller/TrackerRestController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Controller/UserRestController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/DependencyInjection/Configuration.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/DependencyInjection/NotifyApiExtension.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/NotifyApiBundle.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Resources/config/routing.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Resources/config/routing_rest.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Resources/config/services.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Resources/doc/index.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Resources/translations/messages.fr.xlf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Resources/views/Default/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Security/ApiKeyAuthenticator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ApiBundle/Security/ApiKeyUserProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Controller/TrackerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Controller/CommentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Entity/Tracker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Entity/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Form/TrackerType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Form/CommentType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/doctrine/Tracker.orm.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/doctrine/Comment.orm.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing/tracker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing/comment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Tracker/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Comment/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Tracker/getCode.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Tracker/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Comment/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Tracker/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Comment/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Tracker/trackers.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Comment/comments.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CliBundle/Command/CheckCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CliBundle/Command/InstallCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CliBundle/Command/ScheduleControlCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CliBundle/Command/TranslateSynchronizeCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CliBundle/DependencyInjection/Configuration.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CliBundle/DependencyInjection/NotifyCliExtension.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CliBundle/NotifyCliBundle.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CliBundle/Provider/Sms/AbstractSmsProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CliBundle/Provider/Sms/DakikSmsProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CliBundle/Resources/config/routing.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CliBundle/Resources/config/services.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CreditBundle/Controller/CreditController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CreditBundle/DependencyInjection/Configuration.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CreditBundle/DependencyInjection/NotifyCreditExtension.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CreditBundle/Entity/Credit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CreditBundle/NotifyCreditBundle.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CreditBundle/Resources/config/doctrine/Credit.orm.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CreditBundle/Resources/config/routing.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CreditBundle/Resources/config/routing/credit.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CreditBundle/Resources/config/services.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CreditBundle/Resources/doc/index.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CreditBundle/Resources/translations/messages.fr.xlf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/CreditBundle/Resources/views/Credit/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Controller/EventController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Controller/FilterController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Controller/MailTemplateController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Controller/NotyBoxController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Controller/ScheduleController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/DependencyInjection/Configuration.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/DependencyInjection/NotifyEventExtension.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Entity/Event.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Entity/Filter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Entity/MailTemplate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Entity/NotyBox.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Entity/Schedule.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Form/Event/AlertBox.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Form/Event/Gcm.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Form/Event/Iframe.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Form/Event/Link.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Form/Event/Mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Form/Event/MessageBox.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Form/Event/NotificationBox.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Form/Event/Redirect.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Form/Event/Script.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Form/Event/Sms.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Form/FilterType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Form/MailTemplateType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Form/NotyBoxType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Helper/EventHelper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/NotifyEventBundle.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/config/doctrine/Event.orm.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/config/doctrine/Filter.orm.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/config/doctrine/MailTemplate.orm.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/config/doctrine/NotyBox.orm.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/config/doctrine/Schedule.orm.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/config/routing.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/config/routing/event.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/config/routing/filter.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/config/routing/mailtemplate.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/config/routing/notybox.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/config/routing/schedule.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/config/services.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/doc/index.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/translations/messages.fr.xlf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Event/events.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Event/newAlertBox.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Event/newGcm.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Event/newIframe.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Event/newLink.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Event/newMail.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Event/newMessageBox.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Event/newNotificationBox.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Event/newRedirect.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Event/newScript.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Event/newSms.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Event/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Event/tryDemo.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Filter/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Filter/filters.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Filter/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Filter/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/MailTemplate/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/MailTemplate/mail_templates.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/MailTemplate/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/MailTemplate/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/NotyBox/boxes.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/NotyBox/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/NotyBox/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/NotyBox/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Schedule/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Schedule/schedules.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Schedule/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/EventBundle/Traits/EventFormTrait.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/HomeBundle/Resources/views/Home/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/HomeBundle/Resources/views/Home/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Controller/MailController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Controller/MailGroupController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Controller/PhoneController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Controller/RegistrationIdController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Controller/SmsGroupController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/DependencyInjection/Configuration.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/DependencyInjection/NotifyListExtension.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Entity/MailGroup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Entity/MailList.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Entity/PhoneList.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Entity/SmsGroup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Entity/UploadCvsFile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Entity/UserList.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Form/MailGroupType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Form/MailListType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Form/PhoneListType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Form/RegistrationIdType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Form/SmsGroupType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/NotifyListBundle.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/config/doctrine/MailGroup.orm.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/config/doctrine/MailList.orm.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/config/doctrine/PhoneList.orm.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/config/doctrine/SmsGroup.orm.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/config/doctrine/UserList.orm.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/config/routing.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/config/routing/mail.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/config/routing/mail_group.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/config/routing/phone.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/config/routing/registration_id.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/config/routing/sms_group.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/config/services.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/doc/index.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/Group/Mail/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/Group/Mail/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/Group/Mail/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/Group/Mail/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/Group/Sms/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/Group/Sms/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/Group/Sms/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/Group/Sms/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/Mail/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/Mail/import.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/Mail/mails.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/Mail/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/Mail/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/Phone/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/Phone/import.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/Phone/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/Phone/phones.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/Phone/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/RegistrationId/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/RegistrationId/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/RegistrationId/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ListBundle/Resources/views/RegistrationId/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ProjectBundle/Controller/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/ProjectBundle/Controller/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/ProjectBundle/Resources/config/doctrine/Project.orm.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/ProjectBundle/Resources/config/doctrine/Project.orm.yml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Project.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Notify/ProjectBundle/Entity/Project.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Project.orm.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Notify/ProjectBundle/Resources/config/doctrine/Project.orm.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notifyLayout.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/notifyLayout.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="88" column="29" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="doctrine.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/doctrine.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parameters.yml.dist" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>redirect</find>
+      <find>comments</find>
+      <find>decide</find>
+      <find>project</find>
+      <find>comment</find>
+      <find>tracker</find>
+      <find>remove</find>
+      <find>Tracker</find>
+      <find>your account is now activated.</find>
+      <find>confirmed</find>
+      <find>deepkod</find>
+      <find>Deepkod</find>
+      <find>fos_</find>
+      <find>ApiKeyAuthenticator</find>
+      <find>MailGroup</find>
+      <find>Notify\ListBundle\Entity\MailGroup</find>
+      <find>Notify\ListBundle\Entity\SmsGroup</find>
+      <find>Notify\EventBundle\Entity\Schedule</find>
+      <find>api</find>
+      <find>Schedul</find>
+      <find>schedule</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Comment</replace>
+      <replace>comment</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Comment</dir>
+      <dir>$PROJECT_DIR$/vendor</dir>
+      <dir>$PROJECT_DIR$/app/Resources</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/app</dir>
+      <dir>$PROJECT_DIR$/src/Notify</dir>
+      <dir>$PROJECT_DIR$/src</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Notify/ApiBundle/Resources/config/routing_rest.yml" />
+        <option value="$PROJECT_DIR$/src/Notify/AppBundle/Controller/CommentController.php" />
+        <option value="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing/comment.yml" />
+        <option value="$PROJECT_DIR$/app/config/routing/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/doctrine/Comment.orm.yml" />
+        <option value="$PROJECT_DIR$/src/Notify/AppBundle/Entity/Comment.php" />
+        <option value="$PROJECT_DIR$/src/Notify/EventBundle/Resources/config/doctrine/Event.orm.yml" />
+        <option value="$PROJECT_DIR$/src/Notify/AppBundle/Form/CommentType.php" />
+        <option value="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Comment/comments.html.twig" />
+        <option value="$PROJECT_DIR$/src/Notify/UserBundle/Component/Authentication/Handler/LoginSuccessHandler.php" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Notify/HomeBundle/Resources/views/Home/home.html.twig" />
+        <option value="$PROJECT_DIR$/src/Notify/ProjectBundle/Controller/ProjectController.php" />
+        <option value="$PROJECT_DIR$/app/config/services.yml" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/notifyLayout.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/app/config/doctrine.yml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/vendor/kriswallsmith/assetic/package.json" />
+      <path value="$PROJECT_DIR$/web/vendor/ace-builds/package.json" />
+      <path value="$PROJECT_DIR$/web/vendor/ace/doc/package.json" />
+      <path value="$PROJECT_DIR$/web/vendor/ace/lib/ace/mode/_test/package.json" />
+      <path value="$PROJECT_DIR$/web/vendor/ace/package.json" />
+      <path value="$PROJECT_DIR$/web/vendor/ace/tool/package.json" />
+      <path value="$PROJECT_DIR$/web/vendor/bootstrap/package.json" />
+      <path value="$PROJECT_DIR$/web/vendor/eonasdan-bootstrap-datetimepicker/package.json" />
+      <path value="$PROJECT_DIR$/web/vendor/noty/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/jms/parser-lib" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/jsonp-callback-validator" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/liip/functional-test-bundle" />
+      <path value="$PROJECT_DIR$/vendor/braincrafted/bootstrap-bundle" />
+      <path value="$PROJECT_DIR$/vendor/mopa/composer-bridge" />
+      <path value="$PROJECT_DIR$/vendor/mopa/bootstrap-bundle" />
+      <path value="$PROJECT_DIR$/vendor/enterprisephp/display-bundle" />
+      <path value="$PROJECT_DIR$/vendor/stof/doctrine-extensions-bundle" />
+      <path value="$PROJECT_DIR$/vendor/kriswallsmith/assetic" />
+      <path value="$PROJECT_DIR$/vendor/twig/extensions" />
+      <path value="$PROJECT_DIR$/vendor/kriswallsmith/buzz" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/phing/phing" />
+      <path value="$PROJECT_DIR$/vendor/phpmd/phpmd" />
+      <path value="$PROJECT_DIR$/vendor/behat/transliterator" />
+      <path value="$PROJECT_DIR$/vendor/phpcollection/phpcollection" />
+      <path value="$PROJECT_DIR$/vendor/pdepend/pdepend" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/rest-bundle" />
+      <path value="$PROJECT_DIR$/vendor/gedmo/doctrine-extensions" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/vendor/oneup/uploader-bundle" />
+      <path value="$PROJECT_DIR$/vendor/react/stream" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/react/socket" />
+      <path value="$PROJECT_DIR$/vendor/react/event-loop" />
+      <path value="$PROJECT_DIR$/vendor/guzzle/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/nelmio/api-doc-bundle" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/predis/predis" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/ddeboer/data-import-bundle" />
+      <path value="$PROJECT_DIR$/vendor/ddeboer/data-import" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-time-bundle" />
+      <path value="$PROJECT_DIR$/vendor/michelf/php-markdown" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/assetic-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/apy/datagrid-bundle" />
+      <path value="$PROJECT_DIR$/vendor/gos/web-socket-bundle" />
+      <path value="$PROJECT_DIR$/vendor/gos/ratchet" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/gos/pnctl-event-loop-emitter" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/gos/websocket-client" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/gos/ratchet-stack" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/gos/pubsub-router-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/richsage/rms-push-notifications-bundle" />
+      <path value="$PROJECT_DIR$/vendor/evenement/evenement" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/jms/serializer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/vendor/jms/serializer" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1366" />
+    <option name="height" value="768" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sarp-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sarp-project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sarp-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sarp-project" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sarp-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sarp-project" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sarp-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sarp-project" type="462c0819:PsiDirectoryNode" />
+              <item name="etc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sarp-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sarp-project" type="462c0819:PsiDirectoryNode" />
+              <item name="etc" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sarp-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sarp-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sarp-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sarp-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Notify" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///private/var/www/sarp-project/app/Resources/views/notifyLayout.html.twig" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5148fabd-ab07-4a08-ba9e-29301e40b16e" name="Default" comment="" />
+      <created>1529161358979</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1529161358979</updated>
+      <workItem from="1529161362861" duration="5575000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5575000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1366" height="768" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24981412" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32985073" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Notify/ApiBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/ApiBundle/Controller/TrackerRestController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#47#93#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Entity/RegistrationId.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing/project.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="56" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/UserBundle/Controller/ProfileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/UserBundle/Controller/ApiKeyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing/comment.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Controller/CommonController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#47#107#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/doctrine/Comment.orm.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Entity/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="64" column="6" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="6" />
+          <folding>
+            <element signature="e#43#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Controller/CommentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#47#83#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Form/CommentType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#41#77#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/EventBundle/Resources/views/Event/events.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="66" column="62" selection-start-line="66" selection-start-column="62" selection-end-line="67" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/EventBundle/Controller/EventController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="440" column="4" selection-start-line="440" selection-start-column="4" selection-end-line="458" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Controller/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Comment/comments.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/EventBundle/Resources/config/doctrine/Event.orm.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/EventBundle/Entity/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1618">
+          <caret line="115" column="13" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/doctrine/App.orm.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/ApiBundle/Resources/config/routing_rest.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/UserBundle/Component/Authentication/Handler/LoginSuccessHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/UserBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/UserBundle/Resources/config/doctrine/User.orm.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="56" column="72" selection-start-line="56" selection-start-column="72" selection-end-line="56" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2426#2432#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="84" selection-start-line="7" selection-start-column="84" selection-end-line="7" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/confirmed.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.en.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="84" column="28" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/ProjectBundle/Controller/ProjectController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/HomeBundle/Resources/views/Home/home.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="67" selection-start-line="1" selection-start-column="67" selection-end-line="1" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/CliBundle/Command/CheckCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/Common/Controller/NotifyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/bin/scrutinizer">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/bin/recover">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/bin/deploy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+          <folding>
+            <element signature="e#7#47#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/ProjectBundle/Entity/Project.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/ProjectBundle/Resources/config/doctrine/Project.orm.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/notifyLayout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="88" column="29" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/doctrine.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

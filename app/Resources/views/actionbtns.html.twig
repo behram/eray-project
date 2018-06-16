@@ -1,0 +1,43 @@
+<div class="btn-group">
+    {% if(create_path is defined) %}
+        <a class="btn btn-default btn-sm" href="{{ path(create_path) }}" title="{{"c"|trans}}">
+            <i class="fa fa-plus-circle"></i> {{"c"|trans}}
+        </a>
+    {% endif %}
+    {% if(back_path is defined) %}
+        <a class="btn btn-default btn-sm" href="{{ path(back_path, { 'id': entity.id }) }}" title="{{"b"|trans}}">
+            <i class="fa fa-arrow-left"></i>
+        </a>
+    {% endif %}
+    {% if(show_path is defined) %}
+        <a class="btn btn-success btn-sm" href="{{ path(show_path, { 'id': entity.id }) }}" title="{{"details"|trans}}">
+            <i class="fa fa-info-circle"></i>
+        </a>
+    {% endif %}
+    {% if(edit_path is defined) %}
+        <a class="btn btn-warning btn-sm" href="{{ path(edit_path, { 'id': entity.id }) }}" title="{{"edit"|trans}}">
+            <i class="fa fa-pencil"></i>
+        </a>
+    {% endif %}
+    {% if(delete_path is defined) %}
+        <a class="btn btn-danger btn-sm" onclick="return confirm('{% trans %}sure{% endtrans %}');"
+           href="{{ path(delete_path, { 'id': entity.id}) }}" title="{{"delete"|trans}}">
+            <i class="fa fa-trash-o"></i>
+        </a>
+    {% endif %}
+    {% if(app_sdk_path is defined) %}
+        <a class="btn btn-warning btn-sm" href="{{ path(app_sdk_path, { 'id': entity.id }) }}" title="{{"get.sdk"|trans}}">
+            <i class="fa fa-code"></i>
+        </a>
+    {% endif %}
+    {% if(tracker_code_path is defined) %}
+        <a class="btn btn-warning btn-sm" href="{{ path(tracker_code_path, { 'id': entity.id }) }}" title="{{"get.code"|trans}}">
+            <i class="fa fa-code"></i>
+        </a>
+    {% endif %}
+    {% if(test_tracker is defined) %}
+        <a class="btn btn-success btn-sm" href="{{ path(test_tracker) }}?tracker={{ entity.trackerHash }}" title="{{"test.tracker"|trans}}" target="_blank">
+            <i class="fa fa-search"></i>
+        </a>
+    {% endif %}
+</div>

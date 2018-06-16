@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+php bin/console d:d:d --force --if-exists &&
+php bin/console n:i

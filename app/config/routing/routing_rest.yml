@@ -1,0 +1,11 @@
+notify_api_doc:
+  resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+  prefix:   /public/v1/doc
+
+notify_api_home:
+    resource: "@NotifyApiBundle/Resources/config/routing.yml"
+    prefix:   /
+
+notify_rest:
+  type : rest
+  resource: "@NotifyApiBundle/Resources/config/routing_rest.yml"

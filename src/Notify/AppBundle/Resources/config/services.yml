@@ -1,0 +1,25 @@
+services:
+  notify_app.kernel_request_attr_loader:
+    class: Notify\AppBundle\Service\RequestAttrLoaderListener
+    arguments:
+      - "@doctrine.orm.entity_manager"
+      - "@router"
+    tags:
+      - { name: kernel.event_subscriber }
+
+  notify_app.sample.object_loader:
+      class: Notify\AppBundle\Service\SampleObjectLoader
+      arguments:
+        - '@doctrine.orm.entity_manager'
+
+  notify_app.project_relations_fixer:
+      class: Notify\AppBundle\Service\ProjectRelationsFixer
+      arguments:
+          - "@security.token_storage"
+
+  notify_app.orm_event_listener:
+    class: Notify\AppBundle\EventListener\ProjectOrmListener
+    arguments:
+        - "@notify_app.project_relations_fixer"
+    tags:
+        - { name: doctrine.event_listener, event: postPersist }

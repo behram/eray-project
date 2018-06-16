@@ -1,0 +1,7 @@
+notify_dashboard:
+    path:     /
+    defaults: { _controller: NotifyAppBundle:Dashboard:index }
+
+notify_comment:
+    resource: "@NotifyAppBundle/Resources/config/routing/comment.yml"
+    prefix:   /comments/

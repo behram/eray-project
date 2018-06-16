@@ -1,0 +1,21 @@
+{% extends '::notifyLayout.html.twig' %}
+
+{% block breadcrumb %}
+    <li class="active">{{ 'get.api.key'|trans }}</li>
+{% endblock %}
+
+{% block header %}
+    {{ 'get.api.key'|trans }}
+{% endblock %}
+
+{% block content %}
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <input type="text" class="col-sm-12"  value="{{ app.user.apiKey }}"/>
+        <a class="btn btn-info" href="{{ path('user_regenarate_api_key') }}">
+            <i class="icon-ok bigger-110"></i>
+            ReGenerate
+        </a>
+    </div>
+    <div class="col-sm-2"></div>
+{% endblock %}

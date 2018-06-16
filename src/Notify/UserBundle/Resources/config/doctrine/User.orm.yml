@@ -1,0 +1,21 @@
+Notify\UserBundle\Entity\User:
+    type:  entity
+    table: system_user
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    fields:
+        client_time_offset:
+            type: string
+            nullable: true
+            length: 30
+            fixed: false
+            comment: ''
+            column: client_time_offset
+        apiKey:
+            type: string
+            length: 255
+            unique: true
+            nullable: true

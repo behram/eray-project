@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta charset="utf-8"/>
+    <title>{% block title %}Notify{% endblock %}</title>
+
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+
+
+    <!-- bootstrap & fontawesome -->
+    <link rel="stylesheet" href="{{ asset('assets/dashboard/css/bootstrap.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets/dashboard/css/font-awesome.min.css') }}"/>
+
+    <!-- page specific plugin styles -->
+    {% block style %}
+    {% endblock %}
+
+    <!-- text fonts -->
+    <link rel="stylesheet" href="{{ asset('assets/dashboard/css/opensans.css') }}"/>
+    <!-- ace styles -->
+    <link rel="stylesheet" href="{{ asset('assets/dashboard/css/ace.min.css') }}" id="main-ace-style"/>
+
+    <link rel="stylesheet" href="{{ asset('assets/dashboard/css/ace-skins.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets/dashboard/css/ace-rtl.min.css') }}"/>
+
+    <!-- inline styles related to this page -->
+    <style>
+        {% block inline_style %}
+        {% endblock %}
+    </style>
+
+    <script src="{{ asset('assets/dashboard/js/ace-extra.min.js') }}"></script>
+</head>
+
+<body class="no-skin">
+<div id="navbar" class="navbar navbar-default">
+    <div class="navbar-container" id="navbar-container">
+        <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler">
+            <span class="sr-only">Toggle sidebar</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+        <div class="navbar-header pull-left">
+            <a href="#" class="navbar-brand">
+                <small>
+                    <i class="fa fa-leaf"></i>
+                    System
+                </small>
+            </a>
+        </div>
+
+        <div class="navbar-buttons navbar-header pull-right" role="navigation">
+            <ul class="nav ace-nav">
+                <li class="light-blue">
+                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                        <img class="nav-user-photo" src="{{ asset('assets/dashboard/avatars/user.jpg') }}"
+                             alt="Jason's Photo"/>
+                                    <span class="user-info">
+                                        <small>{{ 'welcome'|trans }},</small>
+                                        {{ app.user.username }}
+                                    </span>
+
+                        <i class="ace-icon fa fa-caret-down"></i>
+                    </a>
+
+                    <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                        <li>
+                            <a href="{{ path('fos_user_security_logout') }}">
+                                <i class="ace-icon fa fa-power-off"></i>
+                                {{ 'logout'|trans }}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="main-container container" id="main-container">
+{% if hideMenu is not defined %}
+    <div id="sidebar" class="sidebar responsive">
+
+    <ul class="nav nav-list">
+
+
+    <li>
+        <a href="{{ path('comments') }}">
+            <i class="menu-icon fa fa-bug"></i>
+            <span class="menu-text"> {{ 'comments'|trans }} </span>
+        </a>
+        <b class="arrow fa fa-angle-down"></b>
+    </li>
+
+    </ul>
+    <!-- /.nav-list -->
+
+    <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+        <i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left"
+           data-icon2="ace-icon fa fa-angle-double-right"></i>
+    </div>
+
+    <script type="text/javascript">
+        try {
+            ace.settings.check('sidebar', 'collapsed')
+        } catch (e) {
+        }
+    </script>
+    </div>
+{% endif %}
+<div class="main-content">
+    <div class="breadcrumbs" id="breadcrumbs">
+        <script type="text/javascript">
+            try {
+                ace.settings.check('breadcrumbs', 'fixed')
+            } catch (e) {
+            }
+        </script>
+
+        <ul class="breadcrumb">
+            {% if app.request.attributes.has('_project') %}
+                <li>
+                    <i class="ace-icon fa fa-dashboard home-icon"></i>
+                    <a href="{{ path('notify_dashboard') }}">{{ 'dashboard'|trans }}</a>
+                </li>
+            {% endif %}
+
+            {% block breadcrumb %}
+            {% endblock %}
+        </ul>
+        <!-- /.breadcrumb -->
+    </div>
+
+    <div class="page-content">
+        <div class="page-content-area">
+            <div class="page-header text-center">
+                <h1>
+                    {% block header %}
+                    {% endblock %}
+                </h1>
+            </div>
+            <!-- /.page-header -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- PAGE CONTENT BEGINS -->
+                    {% include '::flashbag.html.twig' %}
+                    {% block content %}
+                    {% endblock %}
+                    <!-- PAGE CONTENT ENDS -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.page-content-area -->
+    </div>
+    <!-- /.page-content -->
+</div>
+<!-- /.main-content -->
+
+<div class="footer">
+    <div class="footer-inner">
+        <div class="footer-content">
+            <span class="bigger-120">
+                <span class="blue bolder">Sarp</span>
+                System &copy; 2018-15
+            </span>
+        </div>
+    </div>
+</div>
+
+<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+    <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+</a>
+
+</div>
+<!-- /.main-container -->
+
+<!-- basic scripts -->
+
+<!--[if !IE]> -->
+<script src="{{ asset('assets/dashboard/js/jquery.min.js') }}"></script>
+<!-- <![endif]-->
+
+<!--[if IE]>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<![endif]-->
+
+<!--[if !IE]> -->
+<script type="text/javascript">
+    window.jQuery || document.write("<script src='{{ asset('assets/dashboard/js/jquery.min.js') }}'>" + "<" + "/script>");
+</script>
+
+<!-- <![endif]-->
+
+<!--[if IE]>
+<script type="text/javascript">
+    window.jQuery || document.write("<script src='dashboard/js/jquery1x.min.js'>" + "<" + "/script>");
+</script>
+<![endif]-->
+
+<script type="text/javascript">
+    if ('ontouchstart' in document.documentElement)
+        document.write("<script src='{{ asset('assets/dashboard/js/jquery.mobile.custom.min.js') }}'>" + "<" + "/script>");
+</script>
+<script src="{{ asset('assets/dashboard/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('vendor/noty/js/noty/packaged/jquery.noty.packaged.js') }}"></script>
+
+<!-- page specific plugin scripts -->
+{% block script %}
+{% endblock %}
+
+<!-- ace scripts -->
+<script src="{{ asset('assets/dashboard/js/ace-elements.min.js') }}"></script>
+<script src="{{ asset('assets/dashboard/js/ace.min.js') }}"></script>
+<script src="{{ asset('assets/dashboard/js/site.custom.script.js') }}"></script>
+<script src="{{ asset('assets/custom/js/custom.script.js') }}"></script>
+
+<!-- inline scripts related to this page -->
+<script>
+    jQuery(function ($) {
+        {% block inline_script %}
+        {% endblock %}
+    });
+</script>
+</body>
+
+</html>

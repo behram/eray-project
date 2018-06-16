@@ -1,0 +1,19 @@
+comments:
+    path:     /
+    defaults: { _controller: NotifyAppBundle:Comment:index }
+
+comment_new:
+    path:     /new
+    defaults: { _controller: NotifyAppBundle:Comment:new }
+
+comment_remove:
+    path:     /remove/{id}
+    defaults: { _controller: NotifyAppBundle:Comment:remove }
+
+comment_edit:
+    path:     /{id}/edit
+    defaults: { _controller: NotifyAppBundle:Comment:edit }
+
+comment_show:
+    path:     /{id}/show
+    defaults: { _controller: NotifyAppBundle:Comment:show }

@@ -1,0 +1,18 @@
+notify_project:
+    resource: "@NotifyProjectBundle/Resources/config/routing.yml"
+    prefix:   /projects
+
+notify_user:
+    resource: "@NotifyUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+notify_app:
+    resource: "@NotifyAppBundle/Resources/config/routing.yml"
+    prefix:   /dashboard
+
+notify_home:
+    resource: "@NotifyHomeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

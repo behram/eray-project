@@ -1,0 +1,11 @@
+notify_homepage:
+    path:     /
+    defaults: { _controller: NotifyHomeBundle:Home:index }
+
+notify_contact:
+    path:     /contact
+    defaults: { _controller: NotifyHomeBundle:Home:contact }
+
+notify_test_tracker:
+    path:     /testTracker
+    defaults: { _controller: NotifyHomeBundle:Home:testTracker }

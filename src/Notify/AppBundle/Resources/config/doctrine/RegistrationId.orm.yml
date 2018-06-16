@@ -1,0 +1,57 @@
+Notify\AppBundle\Entity\RegistrationId:
+    type: entity
+    table: registration_id
+    manyToOne:
+        app:
+            targetEntity: Notify\AppBundle\Entity\App
+            joinColumn:
+                name: app_id
+                referencedColumnName: id
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        registrationId:
+            type: text
+            nullable: false
+            length: null
+            fixed: false
+            comment: ''
+            column: registration_id
+        clientIp:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+            column: client_ip
+        created:
+            type: datetime
+            gedmo:
+              timestampable:
+                on: create
+        updated:
+            type: datetime
+            gedmo:
+              timestampable:
+                on: update
+            nullable: true
+        createdBy:
+           type: string
+           gedmo:
+             blameable:
+               on: create
+           nullable: true
+        updatedBy:
+           type: string
+           gedmo:
+             blameable:
+               on: update
+           nullable: true
+    lifecycleCallbacks: {  }

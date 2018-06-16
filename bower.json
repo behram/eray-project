@@ -1,0 +1,32 @@
+{
+    "name": "Notification System",
+    "version": "0.0.1",
+    "authors": [
+        "Behram ÇELEN <behramcelen@gmail.com>"
+    ],
+    "description": "Notification System",
+    "license": "MIT",
+    "homepage": "www.deeplynotify.com",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "web/vendor",
+        "test",
+        "tests"
+    ],
+    "resolutions": {
+        "bootstrap": "3.3.2",
+        "jquery": "2.1.3"
+    },
+    "dependencies": {
+        "jquery": "*",
+        "bootstrap": "3.3.2",
+        "eonasdan-bootstrap-datetimepicker": "~4.7.14",
+        "noty": "~2.3.4",
+        "moment": "~2.9.0",
+        "requirejs": "*",
+        "ace-builds": "*",
+        "ace": "*"
+    }
+}

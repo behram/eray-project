@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+cp app/config/parameters.scrutinizer.yml.dist app/config/parameters.yml &&
+cp ./phpunit.xml.dist ./phpunit.xml &&
+php bin/console d:d:d --force --if-exists &&
+php bin/console notify:install --env=test &&
+./bin/simple-phpunit -c phpunit.xml tests

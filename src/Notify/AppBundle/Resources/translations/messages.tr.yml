@@ -1,0 +1,169 @@
+all.events: 'Tüm Olaylar'
+welcome: Hoşgeldin
+settings: Ayarlar
+profile: Profil
+logout: Çıkış
+dashboard: Dashboard
+events: Olaylar
+notification.message: 'Bildirim Mesajı'
+alert.message: 'TODO: Alert Message'
+redirect: Yönlendirme
+link.share: 'Link Paylaşım'
+polling: Oylama
+android.push.message: 'Android Push Message'
+sms: Sms
+apple.push.notification: 'Apple Push Notification'
+google.cloud.message: 'Google Cloud Message'
+get.tracker.code: 'TODO: Get Tracker Code'
+set.language: 'Dili Ayarla'
+trackers: 'TODO: Trackers'
+create.event: 'Olay Oluştur'
+create: Oluştur
+notification.message.box: 'Bildirim Mesaj Kutusu'
+event.name: 'Olay Adı'
+message.content: 'Mesaj İçeriği'
+publish.type: 'Yayınlama Tipi'
+only.adblock: 'Sadece AdBlock Kullanıcıları'
+mobile: Mobil
+tablet: Tablet
+desktop: Masaüstü
+publish.length: 'Yayında Kalma Süresi'
+created.at: 'Oluşturulma Tarihi'
+options: Seçenekler
+warning: Uyarı
+send.trash: 'Çöp Kutusuna Gönder'
+redirect.url: 'Yönlendirme Adresi'
+share.url: 'Paylaşım Adresi'
+url.overview: 'Adres Açıklaması'
+alert.box: 'TODO: Alert Box'
+notification.box: 'Bildirim Kutusu'
+publish.schedule: 'Yayın Zamanlaması'
+only.right.now: 'Sadece Şimdi'
+everynewuseronetime: 'Her yeni kullanıcı bir defa'
+everyopenedpage: 'Her açılan sayfa'
+spesifictime: 'Belirli Zaman'
+everyspesifichour: 'Her Belirli Saatte'
+today: Bugün
+minute: Dakika
+publish.everyday: 'Mesajı belirlenen zamanda hergün yayınla'
+select.dates: 'Günleri Seç'
+beta: Beta
+only.publish.adblock: 'Sadece AdBlocker kurulu ise yayınla'
+alert.are.you.sure.remove.event: 'TODO: Are you sure, you will remove this event!'
+warnings.youhavenot.notification.message: 'TODO: You have not any Notification Message Box yet. You can create from left Create Event menu.'
+warnings.youhavenot.alert.box: 'TODO: You haven ''t any Notification Alert Box Message yet. You can create from left Create Event menu.'
+warnings.youhavenot.redirect: 'TODO: You haven ''t any Redirect message yet. You can create from left Create Event menu.'
+warnings.youhavenot.link.share: 'TODO: You haven ''t any Link Share Message yet. You can create from left Create Event menu.'
+new.event.create.alert.box: 'TODO: New Event Create - Alert Box'
+new.event.create.notification.box: 'Yeni Olay Oluştur - Bildirim Kutusu'
+labels.give.name: 'Bir isim ver'
+labels.message.content: 'TODO: Message Content'
+labels.publisheveryspesifichour: 'TODO: Publish every spesified hour one time.'
+labels.dayfilter: 'Gün Filtresi'
+labels.pick.publish.days: 'Yayınlanma Günlerini Seç'
+labels.pick.days: 'TODO: Select or deselect with CTRL+Left Click keys'
+labels.device.type: 'TODO: Device Type'
+labels.adblock.filter: 'TODO: Adblock Filter'
+labels.publish.time.length: 'TODO: Publish Time Length'
+infos.give.name: 'TODO: To easily follow event and analytics give a name to event!'
+infos.content.nohtml: 'TODO: What you want tell your clients! You can not use html variables!'
+days.monday: 'TODO: Monday'
+days.tuesday: 'TODO: Tuesday'
+days.wednesday: 'TODO: Wednesday'
+days.thursday: 'TODO: Thursday'
+days.friday: 'TODO: Friday'
+days.saturday: 'TODO: Saturday'
+days.sunday: 'TODO: Sunday'
+create.tracker: 'TODO: New Tracker Create'
+try.demo.from: 'TODO: Are you curious about how will look like, you can try box models from'
+layout: Yerleşim
+top: Üst
+topleft: 'Üst Sol'
+topright: 'Üst Sağ'
+topcenter: 'Üst Orta'
+center: Orta
+centerleft: 'Orta Sol'
+centerright: 'Orta Sağ'
+bottom: Alt
+bottomleft: 'Alt Sol'
+bottomright: 'Alt Sağ'
+bottomcenter: 'Alt Orta'
+default: Öntanımlı
+error: Hata
+information: Bilgi
+success: Başarılı
+redirect.to.url: 'Adrese Yönlendir'
+try.message.box: 'Mesaj kutusunu dene'
+my.awesome.message: 'TODO: My awesome message box information!'
+execute: Çalıştır
+message.box: 'Mesaj Kutusu'
+tracker.name: 'TODO: Tracker Name'
+tracker.id: 'TODO: Tracker Id'
+language: Dil
+english: İngilizce
+turkish: Türkçe
+console.log: 'TODO: Console Log'
+updated.at: 'Güncellenme Tarihi'
+get.code: 'Kodu Al'
+new.event.create.message.box: 'Yeni Olay Oluştur - Mesaj Kutusu'
+new.event.create.link.share: 'Yeni Olay Oluştur - Adres Paylaşımı'
+new.event.create.redirect.to.url: 'Yeni Olay Oluştur - Adrese Yonlendiir'
+labels.message.type: 'Mesaj Tipi'
+labels.pick.publish.time: 'Yayın zamanını seç'
+labels.share.link: 'Adres Paylai'
+labels.redirect.link: 'TODO: Redirect Link'
+labels.link.overview: 'TODO: Link Overview'
+labels.console.log: 'TODO: Console Log'
+labels.copypaste: 'TODO: Copy+Paste your tracker code'
+infos.content.usehtml: 'TODO: What you want tell your clients! You can use html variables!'
+infos.share.link: 'TODO: Link want to share with clients! (use http:// or https:// protocols)'
+infos.redirect.link: 'TODO: Users will redirect to entered link! (use http:// or https:// protocols)'
+infos.link.overview: 'TODO: What about this link! Why clients click this link.'
+infos.try.demo.messagebox: 'TODO: Hello! you can spesify from bottom box detail and execute!'
+infos.optional8character: 'TODO: Optional 8 character'
+apps: Uygulamalar
+analytics: Analiz
+mail.templates: 'Mail Şablonları'
+filters: Fİltreler
+schedules: Zamanlamalar
+schedule: Zamanlama
+message.boxes: 'Mesaj Kutuları'
+credit: Kredi
+script.tag: 'Script Tag'
+mail.send: 'Mail Gönder'
+lists: Listeler
+groups: Gruplar
+api.documentation: 'API Dökümantasyon'
+get.api.key: 'API Key Al'
+mail.list: 'Mail Listesi'
+phone.list: 'Telefon Listesi'
+registration.ids: 'Registration Id leri'
+mail.groups: 'Mail Grupları'
+sms.groups: 'Sms Grupları'
+infos.content.androidgcm: 'TODO: What you want tell your android using clients! '
+infos.content.sms: 'TODO: What you want tell your sms users!'
+event.id: 'Olay Id'
+box.name: 'Kutu Adı'
+credit.web: 'Web Kredisi'
+credit.mail: 'Mail Kredisi'
+credit.sms: 'Sms Kredisi'
+credit.gcm: 'GCM Kredisi'
+app.name: 'Uygulama Adı'
+app.hash: 'Uygulama Anahtarı'
+app.id: 'Uygulama Id'
+app.language: 'Uygulama Dili'
+crete.app: 'Uygulama Oluştur'
+show.app: 'Uygulamayı Göster'
+schedule.name: 'Zamanlama Adı'
+filter.name: 'Filtre Adı'
+group.name: 'Grup Adı'
+mail.template.name: 'Mail Şablon Adı'
+iframe.url: 'Frame adresi'
+iframe.height: 'Frame Yüksekliği'
+iframe.width: 'Frame Genişliği'
+script.url: 'Script Adresi'
+template.id: 'Şablon Id'
+template.name: 'Şablon Adı'
+template.content: 'Şablon İçeriği'
+schedule.id: 'Zamanlama Id'
+publish.type.overview: 'Genel Tanım'

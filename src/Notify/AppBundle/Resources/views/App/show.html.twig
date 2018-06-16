@@ -1,0 +1,18 @@
+{% extends '::notifyLayout.html.twig' %}
+
+{% block breadcrumb %}
+    <li class="active">{{ 'show.app'|trans }}</li>
+{% endblock %}
+
+{% block header %}
+    {{ 'create.app'|trans }}
+{% endblock %}
+
+{% block content %}
+    <h1>{{"app"|trans}}</h1>
+    {{ display(entity) }}
+
+    {% set back_path = 'apps' %}
+    {% set edit_path = 'apps_edit' %}
+    {% include '::actionbtns.html.twig' %}
+{% endblock %}

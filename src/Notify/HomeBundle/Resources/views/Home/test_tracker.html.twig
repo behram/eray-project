@@ -1,0 +1,10 @@
+<center><h2>Test Tracker -> {{ app.request.query.get("tracker") }}</h2></center>
+
+<script>var utsv = utsv || [];
+    utsv.push('{{ app.request.query.get("tracker") }}', true);
+    (function () {
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "{{ url('cdn_ut_file') }}";
+        document.getElementsByTagName("head")[0].appendChild(s);
+    })();</script>

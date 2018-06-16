@@ -1,0 +1,23 @@
+apps:
+    path:     /
+    defaults: { _controller: NotifyAppBundle:App:index }
+
+apps_new:
+    path:     /new
+    defaults: { _controller: NotifyAppBundle:App:new }
+
+apps_remove:
+    path:     /remove/{id}
+    defaults: { _controller: NotifyAppBundle:App:remove }
+
+apps_edit:
+    path:     /{id}/edit
+    defaults: { _controller: NotifyAppBundle:App:edit }
+
+apps_show:
+    path:     /{id}/show
+    defaults: { _controller: NotifyAppBundle:App:show }
+
+apps_get_sdk:
+    path:     /{id}/getSdk
+    defaults: { _controller: NotifyAppBundle:App:getSdk }

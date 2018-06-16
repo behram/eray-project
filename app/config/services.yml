@@ -1,0 +1,57 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/book/service_container.html
+parameters:
+#    parameter_name: value
+
+services:
+    notify.twig.ojs_extension:
+        class: Notify\Common\Twig\NotifyExtension
+        arguments:
+            - "@doctrine.orm.entity_manager"
+            - "@security.token_storage"
+        tags:
+            - { name: twig.extension }
+    notify_app.locale_listener:
+        class: Notify\Common\Services\LocaleListener
+        arguments: ["%kernel.default_locale%"]
+        tags:
+            - { name: kernel.event_subscriber }
+    gedmo.listener.softdeleteable:
+        class: Gedmo\SoftDeleteable\SoftDeleteableListener
+        tags:
+            - { name: doctrine.event_subscriber, connection: default }
+        calls:
+            - [ setAnnotationReader, [ "@annotation_reader" ] ]
+    notify.project_service:
+        class:        Notify\Common\Services\ProjectService
+        arguments:    ["@request_stack"]
+    api_key_user_provider:
+        class: Notify\ApiBundle\Security\ApiKeyUserProvider
+        arguments: ["@doctrine.orm.entity_manager"]
+    notify.security.login_handler:
+        class:     Notify\UserBundle\Component\Authentication\Handler\LoginSuccessHandler
+        arguments:  ["@router"]
+        tags:
+            - { name: 'monolog.logger', channel: 'security' }
+
+    fos_user.doctrine_registry:
+        alias: doctrine
+
+    predis_redis:
+        class: Predis\Client
+
+    logstash_formatter:
+        class: Monolog\Formatter\LogstashFormatter
+        arguments:
+            - "my_app"
+
+    redis_handler:
+        class: Monolog\Handler\RedisHandler
+        arguments:
+            - "@predis_redis"
+            - "phplogs"
+        calls:
+            - method: setFormatter
+              arguments:
+                  - "@logstash_formatter"
+

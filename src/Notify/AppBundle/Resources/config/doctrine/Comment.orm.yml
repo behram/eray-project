@@ -1,0 +1,45 @@
+Notify\AppBundle\Entity\Comment:
+    type: entity
+    table: comment
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: id
+            generator:
+                strategy: IDENTITY
+    fields:
+        comment:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: comment
+        created:
+            type: datetime
+            gedmo:
+              timestampable:
+                on: create
+        updated:
+            type: datetime
+            gedmo:
+              timestampable:
+                on: update
+            nullable: true
+        createdBy:
+           type: string
+           gedmo:
+             blameable:
+               on: create
+           nullable: true
+        updatedBy:
+           type: string
+           gedmo:
+             blameable:
+               on: update
+           nullable: true
+    lifecycleCallbacks: {  }

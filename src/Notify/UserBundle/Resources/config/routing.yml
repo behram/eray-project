@@ -1,0 +1,7 @@
+user_regenarate_api_key:
+    path:     /project/{projectId}/profile/settings/regenerateApiKey
+    defaults: { _controller: NotifyUserBundle:ApiKey:regenerateApiKey }
+
+user_get_api_key:
+    path:     /project/{projectId}/profile/get/apikey
+    defaults: { _controller: NotifyUserBundle:ApiKey:getApiKey }

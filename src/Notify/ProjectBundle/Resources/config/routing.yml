@@ -1,0 +1,7 @@
+decide_project:
+    path:     /decide
+    defaults: { _controller: NotifyProjectBundle:Project:decideProject }
+
+project_new:
+    path:     /new
+    defaults: { _controller: NotifyProjectBundle:Project:new }

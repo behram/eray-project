@@ -1,0 +1,80 @@
+Notify\AppBundle\Entity\App:
+    type: entity
+    table: app
+    uniqueConstraints:
+        app_tracker_hash_unique:
+            columns:
+                - app_hash
+    manyToOne:
+        project:
+            targetEntity: Notify\ProjectBundle\Entity\Project
+            joinColumn:
+                name: project_id
+                referencedColumnName: id
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: id
+            generator:
+                strategy: IDENTITY
+    fields:
+        appName:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: app_name
+        appHash:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            comment: ''
+            column: app_hash
+        language:
+            type: string
+            nullable: false
+            length: 10
+            fixed: false
+            comment: ''
+        isOnline:
+            type: boolean
+            nullable: false
+            comment: ''
+            column: is_online
+        runTime:
+            type: string
+            nullable: false
+            length: 20
+            fixed: false
+            comment: ''
+            column: run_time
+        created:
+            type: datetime
+            gedmo:
+              timestampable:
+                on: create
+        updated:
+            type: datetime
+            gedmo:
+              timestampable:
+                on: update
+            nullable: true
+        createdBy:
+           type: string
+           gedmo:
+             blameable:
+               on: create
+           nullable: true
+        updatedBy:
+           type: string
+           gedmo:
+             blameable:
+               on: update
+           nullable: true
+    lifecycleCallbacks: {  }

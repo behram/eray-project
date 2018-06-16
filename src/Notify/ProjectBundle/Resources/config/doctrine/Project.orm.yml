@@ -1,0 +1,55 @@
+Notify\ProjectBundle\Entity\Project:
+    type: entity
+    table: project
+    manyToOne:
+        user:
+            targetEntity: Notify\UserBundle\Entity\User
+            joinColumn:
+                name: user_id
+                referencedColumnName: id
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        projectName:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            comment: ''
+            column: project_name
+        slug:
+            type: string
+            nullable: true
+            length: 50
+            fixed: false
+            comment: ''
+        created:
+            type: datetime
+            gedmo:
+              timestampable:
+                on: create
+        updated:
+            type: datetime
+            gedmo:
+              timestampable:
+                on: update
+            nullable: true
+        createdBy:
+           type: string
+           gedmo:
+             blameable:
+               on: create
+           nullable: true
+        updatedBy:
+           type: string
+           gedmo:
+             blameable:
+               on: update
+           nullable: true

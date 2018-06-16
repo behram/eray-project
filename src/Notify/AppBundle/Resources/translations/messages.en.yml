@@ -1,0 +1,176 @@
+all.events: All Events
+welcome: Welcome
+settings: Settings
+profile: Profile
+logout: Logout
+dashboard: Dashboard
+events: Events
+create: Create
+create.event: Create Event
+notification.message: Notification Message
+alert.message: Alert Message
+redirect: Redirect
+link.share: Link Share
+polling: Polling
+android.push.message: Android Push Message
+sms: Sms
+apple.push.notification: Apple Push Notification
+google.cloud.message: Google Cloud Message
+set.language: Set Language
+trackers: Trackers
+notification.message.box: Notification Message Box
+event.name: Event Name
+message.content: Message Content
+only.adblock: Only Adblock
+mobile: Mobile
+tablet: Tablet
+desktop: Desktop
+publish.length: Publish Length
+created.at: Created At
+options: Options
+warning: Warning
+alert:
+    are.you.sure:
+        remove:
+            event: 'Are you sure, you will remove this event!'
+send.trash: Send Trash
+warnings.youhavenot.notification.message: 'You have not any Notification Message Box yet. You can create from left Create Event menu.'
+warnings.youhavenot.alert.box: "You haven 't any Notification Alert Box Message yet. You can create from left Create Event menu."
+warnings.youhavenot.redirect: "You haven 't any Redirect message yet. You can create from left Create Event menu."
+warnings.youhavenot.link.share: "You haven 't any Link Share Message yet. You can create from left Create Event menu."
+redirect.url: Redirect Url
+share.url: Share Url
+url.overview: Url Overview
+publish.type: Publish Type
+new.event.create:
+    alert.box: New Event Create - Alert Box
+    notification.box: New Event Create - Notification Box
+    message.box: New Event Create - Message Box
+    link.share: New Event Create - Link Share
+    redirect.to.url: Redirect to Url
+create.tracker: New Tracker Create
+labels:
+    give.name: Give a Name
+    message.content: Message Content
+    publisheveryspesifichour: "Publish every spesified hour one time."
+    dayfilter: Day Filter
+    pick.publish.days: Pick publish days
+    pick.days: Select or deselect with CTRL+Left Click keys
+    device.type: Device Type
+    adblock.filter: Adblock Filter
+    publish.time.length: Publish Time Length
+    message.type: Message Type
+    pick.publish.time: Pick Publish Time
+    share.link: Share Link
+    redirect.link: Redirect Link
+    link.overview: Link Overview
+    console.log: Console Log
+    copypaste: "Copy+Paste your tracker code"
+infos:
+    give.name: "To easily follow event and analytics give a name to event!"
+    content.nohtml: "What you want tell your clients! You can not use html variables!"
+    content.usehtml: "What you want tell your clients! You can use html variables!"
+    content.androidgcm: "What you want tell your android using clients! "
+    content.sms: "What you want tell your sms users!"
+    share.link: "Link want to share with clients! (use http:// or https:// protocols)"
+    redirect.link: "Users will redirect to entered link! (use http:// or https:// protocols)"
+    link.overview: "What about this link! Why clients click this link."
+    try.demo.messagebox: "Hello! you can spesify from bottom box detail and execute!"
+    optional8character: "Optional 8 character"
+warnings.youhavenotracker: "You have not tracker yet! Now create an notify tracker your client waiting you"
+publish.schedule: Publish Schedule
+only.right.now: Only right now
+everynewuseronetime: "Every new user one time"
+everyopenedpage: "Every opened page"
+spesifictime: "Spesific time"
+everyspesifichour: "Every spesific hour"
+today: Today
+minute: Minute
+publish.everyday: Publish everyday message on spesified time
+select.dates: Select dates
+days:
+    monday: Monday
+    tuesday: Tuesday
+    wednesday: Wednesday
+    thursday: Thursday
+    friday: Friday
+    saturday: Saturday
+    sunday: Sunday
+beta: Beta
+only.publish.adblock: Only publish if adblock installed
+try.demo.from: "Are you curious about how will look like, you can try box models from"
+layout: Layout
+top: Top
+topleft: Top Left
+topright: Top Right
+topcenter: Top Center
+center: Center
+centerleft: Center Left
+centerright: Center Right
+bottom: Bottom
+bottomleft: Bottom Left
+bottomright: Bottom Right
+bottomcenter: Bottom Center
+default: Default
+error: Error
+information: Information
+success: Success
+redirect.to.url: Redirect to Url
+try.message.box: Try Message Boxes
+my.awesome.message: My awesome message box information!
+execute: Execute
+message.box: Message Box
+get.tracker.code: Get Tracker Code
+tracker.name: Tracker Name
+tracker.id: Tracker Id
+language: Language
+english: English
+turkish: Turkish
+console.log: Console Log
+updated.at: Updated At
+get.code: Get Code
+apps: Apps
+analytics: Analytics
+mail.templates: Mail Templates
+filters: Filters
+schedules: Schedules
+schedule: Schedule
+message.boxes: Message Boxes
+credit: Credit
+script.tag: Script Tag
+mail.send: Mail Send
+lists: Lists
+groups: Groups
+api.documentation: API Doc.
+get.api.key: Get api key
+mail.list: Mail List
+phone.list: Phone List
+registration.ids: Registration Ids
+mail.groups: Mail Groups
+sms.groups: Sms Groups
+event.id: Event Id
+box.name: Box Name
+credit.web: Web Credit
+credit.mail: Mail Credit
+credit.sms: Sms Credit
+credit.gcm: GCM Credit
+app.name: App Name
+app.hash: App Key
+app.id: App Id
+app.language: App Language
+crete.app: Create App
+show.app: Show App
+schedule.name: Schedule Name
+filter.name: Filter Name
+group.name: Group Name
+mail.template.name: Mail Template Name
+iframe.url: Frame Url
+iframe.height: Frame Height
+iframe.width: Frame Width
+script.url: Script Url
+template.id: Template Id
+template.name: Template Name
+template.content: Template Content
+schedule.id: Schedule Id
+publish.type.overview: Overview
+notification.box: 'Notification Box'

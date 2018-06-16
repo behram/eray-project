@@ -1,0 +1,39 @@
+language: php
+
+env:
+  - SYMFONY_VERSION="3.2.*" DB="postgres" SYMFONY_ENV="test"
+
+php:
+  - 7.1
+  - 7.0
+
+addons:
+  apt_packages:
+    - parallel
+
+services:
+  - postgresql
+  - memcached
+
+sudo: false
+
+before_install:
+  - npm install -g bower
+
+before_script:
+  - phpenv config-add travis.php.ini
+  - phpenv config-rm xdebug.ini
+  - cp app/config/parameters.yml.dist app/config/parameters.yml
+  - cp ./phpunit.xml.dist ./phpunit.xml
+  - composer install --no-interaction --prefer-dist
+  - chmod -R 777 var/cache var/logs
+  - php bin/console notify:install --env=test
+  - composer show
+
+script:
+  - ./bin/simple-phpunit -c phpunit.xml tests/
+
+notifications:
+  slack: ideafield:8GtvUiq3935dZRc1SObHJVcR#notification
+  email:
+    - behramcelen+notify_travis@gmail.com

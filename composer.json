@@ -1,0 +1,101 @@
+{
+    "name": "behram/notify",
+    "license": "proprietary",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        },
+        "classmap": [
+            "app/AppKernel.php",
+            "app/AppCache.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git@github.com:behram/LiipFunctionalTestBundle.git"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:behram/MopaBootstrapBundle.git"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "symfony/symfony": "3.2.*",
+        "doctrine/orm": "^2.5",
+        "doctrine/doctrine-bundle": "^1.6",
+        "doctrine/doctrine-cache-bundle": "^1.2",
+        "symfony/polyfill-apcu": "^1.0",
+        "twig/extensions": "~1.0",
+        "symfony/assetic-bundle": "~2.3",
+        "symfony/swiftmailer-bundle": "^2.3",
+        "symfony/monolog-bundle": "^3.0",
+        "sensio/distribution-bundle": "^5.0",
+        "sensio/framework-extra-bundle": "^3.0.2",
+        "incenteev/composer-parameter-handler": "^2.0",
+	    "braincrafted/bootstrap-bundle": "~2.0",
+	    "friendsofsymfony/rest-bundle": "@dev",
+	    "jms/serializer-bundle": "@dev",
+	    "nelmio/api-doc-bundle": "@dev",
+        "friendsofsymfony/user-bundle": "~2.0@dev",
+        "richsage/rms-push-notifications-bundle": "dev-master",
+        "apy/datagrid-bundle": "dev-master",
+        "guzzle/guzzle": "~3.7",
+        "ddeboer/data-import-bundle": "dev-symfony-2.1",
+        "oneup/uploader-bundle": "1.3.*@dev",
+        "nesbot/carbon": "~1.14",
+        "stof/doctrine-extensions-bundle": "~1.1@dev",
+        "knplabs/knp-time-bundle": "~1.3",
+        "enterprisephp/display-bundle": "^1.1",
+        "mopa/bootstrap-bundle": "^3.1",
+        "gos/web-socket-bundle": "^1.8",
+        "predis/predis": "^1.1"
+    },
+    "require-dev": {
+        "sensio/generator-bundle": "^3.0",
+        "symfony/phpunit-bridge": "^3.0",
+        "liip/functional-test-bundle": "dev-master",
+        "phpmd/phpmd": "^2.6",
+        "phing/phing": "^2.16"
+    },
+    "scripts": {
+        "symfony-scripts": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
+        ],
+        "post-install-cmd": [
+            "@symfony-scripts"
+        ],
+        "post-update-cmd": [
+            "@symfony-scripts"
+        ]
+    },
+    "config": {
+        "bin-dir": "bin",
+        "platform": {
+            "php": "7.0"
+        }
+    },
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-bin-dir": "bin",
+        "symfony-var-dir": "var",
+        "symfony-web-dir": "web",
+        "symfony-tests-dir": "tests",
+        "symfony-assets-install": "relative",
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml"
+        }
+    }
+}

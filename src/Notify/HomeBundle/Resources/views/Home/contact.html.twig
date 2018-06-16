@@ -1,0 +1,112 @@
+{% extends 'NotifyHomeBundle:Home:layout.html.twig' %}
+
+{% block body_class %}contact-page{% endblock %}
+
+{% block content %}
+    <div class="headline-bg contact-headline-bg">
+    </div><!--//headline-bg-->
+
+
+    <!-- ******Contact Section****** -->
+    <section class="contact-section section section-on-bg">
+        <div class="container">
+            <h2 class="title text-center">Contact Us</h2>
+            <!--
+            <p class="intro text-center">We’d love to hear from you. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            -->
+            <form id="contact-form" class="contact-form" method="post" action="#">
+                <div class="row text-center">
+                    <div class="contact-form-inner col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-sm-offset-0 xs-offset-0">
+                        <div class="row">
+
+                            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                <label class="sr-only" for="cname">Your name</label>
+                                <input type="text" class="form-control" id="cname" name="name" placeholder="Your name"
+                                       minlength="2" required>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                <label class="sr-only" for="cemail">Email address</label>
+                                <input type="email" class="form-control" id="cemail" name="email"
+                                       placeholder="Your email address" required>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                                <label class="sr-only" for="cmessage">Your message</label>
+                                <textarea class="form-control" id="cmessage" name="message"
+                                          placeholder="Enter your message" rows="12" required></textarea>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                                <button type="submit" class="btn btn-block btn-cta btn-cta-primary">Send Message
+                                </button>
+                            </div>
+                        </div>
+                        <!--//row-->
+                    </div>
+                </div>
+                <!--//row-->
+                <div id="form-messages"></div>
+            </form>
+            <!--//contact-form-->
+        </div>
+        <!--//container-->
+    </section><!--//contact-section-->
+
+    <!-- ******Other Contact Section****** -->
+    <section class="contact-other-section section">
+        <div class="container text-center">
+            <h2 class="title">Other ways to reach us</h2>
+            <!--
+            <p class="intro">You can also get in touch lorem ipsum dolor sit amet. Donec ut massa consequat, bibendum metus pellentesque, pellentesque arcu. </p>
+            -->
+            <div class="row">
+                <ul class="other-info list-unstyled col-md-6 col-sm-10 col-xs-12 col-md-offset-3 col-sm-offset-1 xs-offset-0">
+                    <li><i class="fa fa-envelope-o"></i><a href="#">deeplynotify@gmail.com</a></li>
+                    <li><i class="fa fa-twitter"></i><a href="https://twitter.com/DeeplyNotify" target="_blank">@DeeplyNotify</a>
+                    </li>
+                    <li><i class="fa fa-phone"></i><a href="tel:+0800123456">+90 500 00 00</a></li>
+                    <li><i class="fa fa-map-marker"></i>Queen Square <br/> 56 College Green Road<br/>BS1 XR18<br/>Bristol<br/>UK
+                    </li>
+                </ul>
+            </div>
+            <!--//row-->
+        </div>
+        <!--//container-->
+    </section><!--//contact-other-section-->
+
+    <!-- ******Map Section****** -->
+    <section class="map-section section">
+        <div class="container text-center">
+            <h2 class="title">How to find us</h2>
+            <!--
+            <p class="intro">Pellentesque efficitur lobortis massa eu sodales. Morbi eu ipsum euismod felis commodo porttitor quis sit amet leo. Sed lacinia eu ipsum sit amet tempus.</p>
+            -->
+            <div class="gmap-wrapper">
+                <div class="gmap" id="map"></div>
+                <!--//map-->
+            </div>
+            <!--//gmap-wrapper-->
+        </div>
+        <!--//container-->
+    </section><!--//map-section-->
+
+    <!-- ******CTA Section****** -->
+    <section id="cta-section" class="section cta-section text-center home-cta-section">
+        <div class="container">
+            <h2 class="title">Ready to reach your clients directly?</h2>
+
+            <p class="intro">More than <span class="counting">100,000</span> users are using Notify</p>
+
+            <p><a class="btn btn-cta btn-cta-primary" href="{{ path('fos_user_registration_register') }}">Try Notify Now</a></p>
+        </div>
+        <!--//container-->
+    </section><!--//cta-section-->
+{% endblock %}
+
+
+{% block scripts %}
+    <!-- contact page specific js starts -->
+    <script src="{{ asset('assets/home/plugins/jquery.validate.min.js') }}"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="{{ asset('assets/home/plugins/gmaps/gmaps.js') }}"></script>
+    <script src="{{ asset('assets/home/js/contact.js') }}"></script>
+    <script src="{{ asset('assets/home/js/map.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,15 @@
+notify_event:
+    resource: "@NotifyEventBundle/Resources/config/routing.yml"
+    prefix:   /
+
+notify_credit:
+    resource: "@NotifyCreditBundle/Resources/config/routing.yml"
+    prefix:   /
+
+notify_list:
+    resource: "@NotifyListBundle/Resources/config/routing.yml"
+    prefix:   /
+
+notify_app:
+    resource: "@NotifyAppBundle/Resources/config/routing.yml"
+    prefix:   /

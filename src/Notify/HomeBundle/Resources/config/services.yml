@@ -1,0 +1,4 @@
+services:
+#    notify_home.example:
+#        class: Notify\HomeBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

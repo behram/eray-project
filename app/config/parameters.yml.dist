@@ -1,0 +1,29 @@
+# This file is a "template" of what your parameters.yml file should look like
+parameters:
+    database_driver:   pdo_pgsql
+    database_host:     127.0.0.1
+    database_port:     5432
+    database_name:     notify
+    database_user:     postgres
+    database_password:
+
+    mailer_transport: smtp
+    mailer_host: smtp.sendgrid.net
+    mailer_port: 587
+    mailer_user: ismailbaskin
+    mailer_password: IsmailSendGrid123
+
+    locale:            en
+
+    secret:            610bcf929033bcbe3b275044d8f19a07f157cf8a
+
+    mongodb_host: 127.0.0.1
+
+    sms_user: '05052436685'
+    sms_password: 'kelebek'
+    sms_header: 'Notify'
+
+    tornado_host: 127.0.0.1
+    tornado_port: 9090
+    base_host: notify.dev
+    database_path: "%kernel.root_dir%/data/data.db3"

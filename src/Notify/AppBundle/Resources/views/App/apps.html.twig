@@ -1,0 +1,59 @@
+{% extends '::notifyLayout.html.twig' %}
+
+{% block header %}
+    {{ 'apps'|trans }}
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-xs-12">
+            <table id="sample-table-1" class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th>{{ 'app.name'|trans }}</th>
+                    <th>{{ 'app.id'|trans }}</th>
+                    <th>{{ 'app.hash'|trans }}</th>
+                    <th>{{ 'language'|trans }}</th>
+                    <th>{{ 'created.at'|trans }}</th>
+                    <th>{{ 'updated.at'|trans }}</th>
+                    <th class="text-center">{{ 'options'|trans }}</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                {% for app in apps %}
+                    <tr>
+                        <td>
+                            <a href="{{ path('apps_show', {id:app.id }) }}">
+                                {{ app.appName}}
+                            </a>
+                        </td>
+                        <td>{{ app.id }}</td>
+                        <td>{{ app.appHash }}</td>
+                        <td>{{ app.language }}</td>
+                        <td>{{ app.created|ago }}</td>
+                        <td>{% if app.updated is not null %}{{ app.updated|ago }}{% endif %}</td>
+                        <td class="text-center">
+                            {% set entity = app %}
+                            {% set show_path = 'apps_show' %}
+                            {% set edit_path = 'apps_edit' %}
+                            {% set app_sdk_path = 'apps_get_sdk' %}
+                            {% include '::actionbtns.html.twig' %}
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            <div class="col-sm-offset-9 col-sm-3">
+                <a class='btn btn-primary btn-block col-sm-offset-9 col-sm-3' href="{{ path('apps_new') }}">Create New
+                    App</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block inline_style %}
+    .table {
+    border: 1px solid #dddddd;
+    }
+{% endblock %}
