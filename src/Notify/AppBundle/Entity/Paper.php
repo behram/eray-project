@@ -10,9 +10,9 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ExclusionPolicy("all")
- * Feedback
+ * Paper
  */
-class Feedback
+class Paper
 {
     use DisplayTrait;
 
@@ -26,7 +26,15 @@ class Feedback
      * @var string
      * @Expose
      */
-    private $feedback;
+    private $title;
+
+    /**
+     * @var string
+     * @Expose
+     */
+    private $content;
+
+    private $rate = 0;
 
     /**
      * @var \DateTime
@@ -59,51 +67,100 @@ class Feedback
     }
 
     /**
-     * Set feedbackName.
+     * Set paperName.
      *
-     * @param string $feedbackName
+     * @param string $paperName
      *
-     * @return Feedback
+     * @return Paper
      */
-    public function setFeedback($feedback)
+    public function setTitle($title)
     {
-        $this->feedback = $feedback;
+        $this->title = $title;
 
         return $this;
     }
 
     /**
-     * Get feedbackName.
+     * Get paperName.
      *
      * @return string
      */
-    public function getFeedback()
+    public function getTitle()
     {
-        return $this->feedback;
+        return $this->title;
     }
 
     /**
-     * Set feedbackHash.
+     * Set paperName.
      *
-     * @param string $feedbackHash
+     * @param string $paperName
      *
-     * @return Feedback
+     * @return Paper
      */
-    public function setFeedbackHash($feedbackHash)
+    public function setContent($content)
     {
-        $this->feedbackHash = $feedbackHash;
+        $this->content = $content;
 
         return $this;
     }
 
     /**
-     * Get feedbackHash.
+     * Get paperName.
      *
      * @return string
      */
-    public function getFeedbackHash()
+    public function getContent()
     {
-        return $this->feedbackHash;
+        return $this->content;
+    }
+
+
+    /**
+     * Set paperName.
+     *
+     * @param string $paperName
+     *
+     * @return Paper
+     */
+    public function setRate($rate = 0)
+    {
+        $this->rate = $rate;
+
+        return $this;
+    }
+
+    /**
+     * Get paperName.
+     *
+     * @return string
+     */
+    public function getRate()
+    {
+        return $this->rate;
+    }
+
+    /**
+     * Set paperHash.
+     *
+     * @param string $paperHash
+     *
+     * @return Paper
+     */
+    public function setPaperHash($paperHash)
+    {
+        $this->paperHash = $paperHash;
+
+        return $this;
+    }
+
+    /**
+     * Get paperHash.
+     *
+     * @return string
+     */
+    public function getPaperHash()
+    {
+        return $this->paperHash;
     }
 
     /**
@@ -111,7 +168,7 @@ class Feedback
      *
      * @param string $language
      *
-     * @return Feedback
+     * @return Paper
      */
     public function setLanguage($language)
     {
@@ -135,7 +192,7 @@ class Feedback
      *
      * @param bool $consoleLog
      *
-     * @return Feedback
+     * @return Paper
      */
     public function setConsoleLog($consoleLog)
     {
@@ -159,7 +216,7 @@ class Feedback
      *
      * @param string $domains
      *
-     * @return Feedback
+     * @return Paper
      */
     public function setDomains($domains)
     {
@@ -183,7 +240,7 @@ class Feedback
      *
      * @param bool $isOnline
      *
-     * @return Feedback
+     * @return Paper
      */
     public function setIsOnline($isOnline)
     {
@@ -207,7 +264,7 @@ class Feedback
      *
      * @param string $runTime
      *
-     * @return Feedback
+     * @return Paper
      */
     public function setRunTime($runTime)
     {
@@ -231,7 +288,7 @@ class Feedback
      *
      * @param \DateTime $created
      *
-     * @return Feedback
+     * @return Paper
      */
     public function setCreated($created)
     {
@@ -255,7 +312,7 @@ class Feedback
      *
      * @param \DateTime $updated
      *
-     * @return Feedback
+     * @return Paper
      */
     public function setUpdated($updated)
     {
@@ -279,7 +336,7 @@ class Feedback
      *
      * @param string $createdBy
      *
-     * @return Feedback
+     * @return Paper
      */
     public function setCreatedBy($createdBy)
     {
@@ -303,7 +360,7 @@ class Feedback
      *
      * @param string $updatedBy
      *
-     * @return Feedback
+     * @return Paper
      */
     public function setUpdatedBy($updatedBy)
     {
@@ -327,7 +384,7 @@ class Feedback
      *
      * @param Project $project
      *
-     * @return Feedback
+     * @return Paper
      */
     public function setProject(Project $project = null)
     {

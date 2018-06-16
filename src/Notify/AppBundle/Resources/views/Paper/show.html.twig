@@ -1,0 +1,19 @@
+{% extends '::notifyLayout.html.twig' %}
+
+{% block breadcrumb %}
+    <li class="active">{{ 'show.paper'|trans }}</li>
+{% endblock %}
+
+{% block header %}
+    {{ 'show.paper'|trans }}
+{% endblock %}
+
+{% block content %}
+    <h1>{{"paper"|trans}}</h1>
+    {{ display(entity) }}
+
+    {% set back_path = 'papers' %}
+    {% set edit_path = 'paper_edit' %}
+    {% set test_paper = 'notify_test_paper' %}
+    {% include '::actionbtns.html.twig' %}
+{% endblock %}

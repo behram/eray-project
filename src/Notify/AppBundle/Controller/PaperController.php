@@ -19,10 +19,20 @@ class PaperController extends Controller
     /**
      * @return Response
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
+        $query = $request->get('q');
+        if(empty($query)){
+            $papers = $this->getRepo(Paper::class)->findAll();
+        }else{
+            $papers = $this->getRepo(Paper::class)->createQueryBuilder('o')
+                ->andWhere('o.title LIKE :title')
+                ->setParameter('title', '%'.$query.'%')
+                ->getQuery()
+                ->getResult();
+        }
         return $this->render('NotifyAppBundle:Paper:papers.html.twig', [
-            'papers' => $this->getRepo(Paper::class)->findAll(),
+            'papers' => $papers,
         ]);
     }
 

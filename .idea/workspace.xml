@@ -2,23 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92bb10d0-8c76-4cf9-9360-1b3b594dfa81" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Controller/PaperController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sarp-project.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Form/PaperType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing/paper.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Paper/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Paper/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Paper/papers.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Paper/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/notifyLayout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/notifyLayout.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/data/data.db3" beforeDir="false" afterPath="$PROJECT_DIR$/app/data/data.db3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Controller/CommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Controller/FeedbackController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Entity/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Form/CommentType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Form/FeedbackType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/doctrine/Comment.orm.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/doctrine/Feedback.orm.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Controller/PaperController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Controller/PaperController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Entity/Paper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing/comment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing/feedback.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Comment/comments.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Feedback/feedbacks.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Comment/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Feedback/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Comment/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Feedback/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Comment/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Feedback/show.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,8 +30,8 @@
       <file leaf-file-name="PaperController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Controller/PaperController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
               <folding>
                 <element signature="e#47#81#0#PHP" expanded="true" />
               </folding>
@@ -44,23 +39,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Feedback.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Entity/Feedback.php">
+      <file leaf-file-name="notifyLayout.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/notifyLayout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4608">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#43#84#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="321">
+              <caret line="103" column="16" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Comment.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Entity/Comment.php">
+      <file leaf-file-name="papers.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Paper/papers.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="161">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -72,15 +64,18 @@
       <find>comments</find>
       <find>comment</find>
       <find>Comment</find>
+      <find>Feedback</find>
       <find>feedback</find>
     </findStrings>
     <replaceStrings>
       <replace>feedback</replace>
       <replace>Feedback</replace>
+      <replace>Paper</replace>
       <replace>paper</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Feedback</dir>
+      <dir>$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Paper</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -91,14 +86,19 @@
       <list>
         <option value="$PROJECT_DIR$/src/Notify/AppBundle/Entity/Feedback.php" />
         <option value="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing/feedback.yml" />
-        <option value="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/views/notifyLayout.html.twig" />
         <option value="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/doctrine/Feedback.orm.yml" />
         <option value="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Feedback/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/Notify/AppBundle/Controller/FeedbackController.php" />
         <option value="$PROJECT_DIR$/src/Notify/AppBundle/Form/FeedbackType.php" />
-        <option value="$PROJECT_DIR$/src/Notify/AppBundle/Controller/PaperController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/notifyLayout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing/paper.yml" />
+        <option value="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Paper/new.html.twig" />
         <option value="$PROJECT_DIR$/src/Notify/AppBundle/Entity/Paper.php" />
+        <option value="$PROJECT_DIR$/src/Notify/AppBundle/Form/PaperType.php" />
+        <option value="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/doctrine/Paper.orm.yml" />
+        <option value="$PROJECT_DIR$/src/Notify/AppBundle/Controller/PaperController.php" />
+        <option value="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Paper/papers.html.twig" />
       </list>
     </option>
   </component>
@@ -230,6 +230,24 @@
             <path>
               <item name="eray-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="eray-project" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eray-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eray-project" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eray-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eray-project" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eray-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eray-project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -261,6 +279,33 @@
               <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Entity" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="eray-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eray-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Notify" type="462c0819:PsiDirectoryNode" />
+              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eray-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eray-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Notify" type="462c0819:PsiDirectoryNode" />
+              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="eray-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="eray-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Notify" type="462c0819:PsiDirectoryNode" />
+              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Paper" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -275,8 +320,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Notify/AppBundle/Form" />
+      <recent name="$PROJECT_DIR$/src/Notify/AppBundle/Resources/views" />
+      <recent name="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/doctrine" />
+      <recent name="$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing" />
       <recent name="$PROJECT_DIR$/src/Notify/AppBundle/Entity" />
-      <recent name="$PROJECT_DIR$/src/Notify/AppBundle/Controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -301,12 +349,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529168983036</updated>
-      <workItem from="1529168985524" duration="2144000" />
+      <workItem from="1529168985524" duration="3356000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2144000" />
+    <option name="totallyTimeSpent" value="3356000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
@@ -350,30 +398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Controller/FeedbackController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding>
-            <element signature="e#47#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/notifyLayout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="86" column="42" selection-start-line="86" selection-start-column="42" selection-end-line="86" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/doctrine/Feedback.orm.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -395,30 +419,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Controller/PaperController.php">
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Entity/Comment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-          <folding>
-            <element signature="e#47#81#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Entity/Feedback.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4608">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="102">
+          <caret line="323" lean-forward="true" selection-start-line="323" selection-end-line="323" />
           <folding>
             <element signature="e#43#84#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Entity/Comment.php">
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Controller/FeedbackController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#47#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Form/PaperType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+          <folding>
+            <element signature="e#41#75#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Entity/Paper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding>
+            <element signature="e#43#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Controller/CommonController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/routing/paper.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Resources/config/doctrine/Paper.orm.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Paper/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Controller/PaperController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#47#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/notifyLayout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="103" column="16" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Notify/AppBundle/Resources/views/Paper/papers.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
         </state>
       </provider>
     </entry>

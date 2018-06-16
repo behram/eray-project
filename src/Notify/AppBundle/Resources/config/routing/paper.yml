@@ -1,0 +1,19 @@
+papers:
+    path:     /
+    defaults: { _controller: NotifyAppBundle:Paper:index }
+
+paper_new:
+    path:     /new
+    defaults: { _controller: NotifyAppBundle:Paper:new }
+
+paper_remove:
+    path:     /remove/{id}
+    defaults: { _controller: NotifyAppBundle:Paper:remove }
+
+paper_edit:
+    path:     /{id}/edit
+    defaults: { _controller: NotifyAppBundle:Paper:edit }
+
+paper_show:
+    path:     /{id}/show
+    defaults: { _controller: NotifyAppBundle:Paper:show }

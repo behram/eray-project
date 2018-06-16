@@ -1,0 +1,64 @@
+{% extends '::notifyLayout.html.twig' %}
+
+{% block header %}
+    {{ 'papers'|trans }}
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-sm-9">
+            <form>
+											<span class="input-icon">
+												<input type="text" name="q" placeholder="Search..."/>
+												<i class="ace-icon fa fa-search blue"></i>
+											</span>
+            </form>
+
+        </div>
+
+
+        <div class="col-xs-12">
+            <table id="sample-table-1" class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th>{{ 'title'|trans }}</th>
+                    <th>{{ 'content'|trans }}</th>
+                    <th>{{ 'rate'|trans }}</th>
+                    <th>{{ 'created.at'|trans }}</th>
+                    <th>{{ 'updated.at'|trans }}</th>
+                    <th class="text-center">{{ 'options'|trans }}</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                {% for paper in papers %}
+                    <tr>
+                        <td>{{ paper.title }}</td>
+                        <td>{{ paper.content }}</td>
+                        <td>{{ paper.rate }}</td>
+                        <td>{{ paper.created|ago }}</td>
+                        <td>{% if paper.updated is not null %}{{ paper.updated|ago }}{% endif %}</td>
+                        <td class="text-center">
+                            {% set entity = paper %}
+                            {% set show_path = 'paper_show' %}
+                            {% set edit_path = 'paper_edit' %}
+                            {% set delete_path = 'paper_remove' %}
+                            {% include '::actionbtns.html.twig' %}
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            <div class="col-sm-offset-9 col-sm-3">
+                <a class='btn btn-primary btn-block col-sm-offset-9 col-sm-3' href="{{ path('paper_new') }}">Create
+                    New Paper</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block inline_style %}
+    .table {
+    border: 1px solid #dddddd;
+    }
+{% endblock %}

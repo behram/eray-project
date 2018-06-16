@@ -1,0 +1,57 @@
+Notify\AppBundle\Entity\Paper:
+    type: entity
+    table: paper
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            paper: ''
+            id: true
+            column: id
+            generator:
+                strategy: IDENTITY
+    fields:
+        title:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            paper: ''
+            column: title
+        content:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            paper: ''
+            column: content
+        rate:
+            type: integer
+            nullable: false
+            options:
+                default: 0
+        created:
+            type: datetime
+            gedmo:
+              timestampable:
+                on: create
+        updated:
+            type: datetime
+            gedmo:
+              timestampable:
+                on: update
+            nullable: true
+        createdBy:
+           type: string
+           gedmo:
+             blameable:
+               on: create
+           nullable: true
+        updatedBy:
+           type: string
+           gedmo:
+             blameable:
+               on: update
+           nullable: true
+    lifecycleCallbacks: {  }

@@ -5,3 +5,7 @@ notify_dashboard:
 notify_feedback:
     resource: "@NotifyAppBundle/Resources/config/routing/feedback.yml"
     prefix:   /feedbacks/
+
+notify_paper:
+    resource: "@NotifyAppBundle/Resources/config/routing/paper.yml"
+    prefix:   /papers/

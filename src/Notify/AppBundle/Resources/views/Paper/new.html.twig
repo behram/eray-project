@@ -1,0 +1,17 @@
+{% extends '::notifyLayout.html.twig' %}
+
+{% block breadcrumb %}
+    <li class="active">{{ 'create.paper'|trans }}</li>
+{% endblock %}
+
+{% block header %}
+    {{ 'create.paper'|trans }}
+{% endblock %}
+
+{% block content %}
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+    {{ form(form) }}
+    </div>
+    <div class="col-sm-4"></div>
+{% endblock %}
