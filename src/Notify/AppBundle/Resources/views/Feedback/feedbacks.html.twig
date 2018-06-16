@@ -1,7 +1,7 @@
 {% extends '::notifyLayout.html.twig' %}
 
 {% block header %}
-    {{ 'comments'|trans }}
+    {{ 'feedbacks'|trans }}
 {% endblock %}
 
 {% block content %}
@@ -10,7 +10,7 @@
             <table id="sample-table-1" class="table table-striped table-hover">
                 <thead>
                 <tr>
-                    <th>{{ 'comment'|trans }}</th>
+                    <th>{{ 'feedback'|trans }}</th>
                     <th>{{ 'created.at'|trans }}</th>
                     <th>{{ 'updated.at'|trans }}</th>
                     <th class="text-center">{{ 'options'|trans }}</th>
@@ -18,16 +18,16 @@
                 </thead>
 
                 <tbody>
-                {% for comment in comments %}
+                {% for feedback in feedbacks %}
                     <tr>
-                        <td>{{ comment.comment }}</td>
-                        <td>{{ comment.created|ago }}</td>
-                        <td>{% if comment.updated is not null %}{{ comment.updated|ago }}{% endif %}</td>
+                        <td>{{ feedback.feedback }}</td>
+                        <td>{{ feedback.created|ago }}</td>
+                        <td>{% if feedback.updated is not null %}{{ feedback.updated|ago }}{% endif %}</td>
                         <td class="text-center">
-                            {% set entity = comment %}
-                            {% set show_path = 'comment_show' %}
-                            {% set edit_path = 'comment_edit' %}
-                            {% set delete_path = 'comment_remove' %}
+                            {% set entity = feedback %}
+                            {% set show_path = 'feedback_show' %}
+                            {% set edit_path = 'feedback_edit' %}
+                            {% set delete_path = 'feedback_remove' %}
                             {% include '::actionbtns.html.twig' %}
                         </td>
                     </tr>
@@ -35,8 +35,8 @@
                 </tbody>
             </table>
             <div class="col-sm-offset-9 col-sm-3">
-                <a class='btn btn-primary btn-block col-sm-offset-9 col-sm-3' href="{{ path('comment_new') }}">Create
-                    New Comment</a>
+                <a class='btn btn-primary btn-block col-sm-offset-9 col-sm-3' href="{{ path('feedback_new') }}">Create
+                    New Feedback</a>
             </div>
         </div>
     </div>

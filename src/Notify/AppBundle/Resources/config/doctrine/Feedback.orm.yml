@@ -1,24 +1,24 @@
-Notify\AppBundle\Entity\Comment:
+Notify\AppBundle\Entity\Feedback:
     type: entity
-    table: comment
+    table: feedback
     id:
         id:
             type: integer
             nullable: false
             unsigned: false
-            comment: ''
+            feedback: ''
             id: true
             column: id
             generator:
                 strategy: IDENTITY
     fields:
-        comment:
+        feedback:
             type: string
             nullable: false
             length: 100
             fixed: false
-            comment: ''
-            column: comment
+            feedback: ''
+            column: feedback
         created:
             type: datetime
             gedmo:

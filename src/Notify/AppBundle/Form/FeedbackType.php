@@ -2,7 +2,7 @@
 
 namespace Notify\AppBundle\Form;
 
-use Notify\AppBundle\Entity\Comment;
+use Notify\AppBundle\Entity\Feedback;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
@@ -11,7 +11,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class CommentType extends AbstractType
+class FeedbackType extends AbstractType
 {
     /**
      * @param FormBuilderInterface $builder
@@ -20,7 +20,7 @@ class CommentType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('comment', TextareaType::class, [
+            ->add('feedback', TextareaType::class, [
                 'required' => true,
                 'attr' => [
                     'class' => 'form-control',
@@ -35,7 +35,7 @@ class CommentType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => Comment::class,
+            'data_class' => Feedback::class,
         ));
     }
 

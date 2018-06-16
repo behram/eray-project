@@ -1,0 +1,19 @@
+feedbacks:
+    path:     /
+    defaults: { _controller: NotifyAppBundle:Feedback:index }
+
+feedback_new:
+    path:     /new
+    defaults: { _controller: NotifyAppBundle:Feedback:new }
+
+feedback_remove:
+    path:     /remove/{id}
+    defaults: { _controller: NotifyAppBundle:Feedback:remove }
+
+feedback_edit:
+    path:     /{id}/edit
+    defaults: { _controller: NotifyAppBundle:Feedback:edit }
+
+feedback_show:
+    path:     /{id}/show
+    defaults: { _controller: NotifyAppBundle:Feedback:show }

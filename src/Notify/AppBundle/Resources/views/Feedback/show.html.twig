@@ -1,0 +1,19 @@
+{% extends '::notifyLayout.html.twig' %}
+
+{% block breadcrumb %}
+    <li class="active">{{ 'show.feedback'|trans }}</li>
+{% endblock %}
+
+{% block header %}
+    {{ 'show.feedback'|trans }}
+{% endblock %}
+
+{% block content %}
+    <h1>{{"feedback"|trans}}</h1>
+    {{ display(entity) }}
+
+    {% set back_path = 'feedbacks' %}
+    {% set edit_path = 'feedback_edit' %}
+    {% set test_feedback = 'notify_test_feedback' %}
+    {% include '::actionbtns.html.twig' %}
+{% endblock %}

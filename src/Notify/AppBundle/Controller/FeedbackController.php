@@ -2,8 +2,8 @@
 
 namespace Notify\AppBundle\Controller;
 
-use Notify\AppBundle\Entity\Comment;
-use Notify\AppBundle\Form\CommentType;
+use Notify\AppBundle\Entity\Feedback;
+use Notify\AppBundle\Form\FeedbackType;
 use Notify\Common\Controller\NotifyController as Controller;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -11,18 +11,18 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
- * Class CommentController
+ * Class FeedbackController
  * @package Notify\AppBundle\Controller
  */
-class CommentController extends Controller
+class FeedbackController extends Controller
 {
     /**
      * @return Response
      */
     public function indexAction()
     {
-        return $this->render('NotifyAppBundle:Comment:comments.html.twig', [
-            'comments' => $this->getRepo(Comment::class)->findAll(),
+        return $this->render('NotifyAppBundle:Feedback:feedbacks.html.twig', [
+            'feedbacks' => $this->getRepo(Feedback::class)->findAll(),
         ]);
     }
 
@@ -35,8 +35,8 @@ class CommentController extends Controller
     {
         $em = $this->getEm();
 
-        $entity = new Comment();
-        $form = $this->createForm(CommentType::class, $entity);
+        $entity = new Feedback();
+        $form = $this->createForm(FeedbackType::class, $entity);
         $form->add('submit', SubmitType::class, ['label' => 'Create']);
         $form->handleRequest($request);
 
@@ -46,24 +46,24 @@ class CommentController extends Controller
             $em->flush();
             $this->addFlash('success', 'successful.create');
 
-            return $this->redirectToRoute('comments');
+            return $this->redirectToRoute('feedbacks');
         }
 
-        return $this->render('NotifyAppBundle:Comment:new.html.twig', [
+        return $this->render('NotifyAppBundle:Feedback:new.html.twig', [
             'form' => $form->createView(),
         ]);
     }
 
     /**
      * @param Request $request
-     * @param Comment $entity
+     * @param Feedback $entity
      *
      * @return Response
      */
-    public function editAction(Request $request, Comment $entity)
+    public function editAction(Request $request, Feedback $entity)
     {
         $em = $this->getEm();
-        $form = $this->createForm(CommentType::class, $entity);
+        $form = $this->createForm(FeedbackType::class, $entity);
         $form->add('submit', SubmitType::class, ['label' => 'Update']);
 
         $form->handleRequest($request);
@@ -72,56 +72,56 @@ class CommentController extends Controller
             $em->flush();
             $this->addFlash('success', 'successful.update');
 
-            return $this->redirectToRoute('comment_edit', ['id' => $entity->getId()]);
+            return $this->redirectToRoute('feedback_edit', ['id' => $entity->getId()]);
         }
 
-        return $this->render('NotifyAppBundle:Comment:edit.html.twig', [
+        return $this->render('NotifyAppBundle:Feedback:edit.html.twig', [
             'form' => $form->createView(),
         ]);
     }
 
     /**
-     * @param Comment $entity
+     * @param Feedback $entity
      *
      * @return RedirectResponse
      */
-    public function removeAction(Comment $entity)
+    public function removeAction(Feedback $entity)
     {
         $em = $this->getEm();
         $em->remove($entity);
         $em->flush();
         $this->addFlash('success', 'successful.remove');
 
-        return $this->redirectToRoute('comments');
+        return $this->redirectToRoute('feedbacks');
     }
 
     /**
-     * @param Comment $entity
+     * @param Feedback $entity
      *
      * @return Response
      */
-    public function showAction(Comment $entity)
+    public function showAction(Feedback $entity)
     {
-        return $this->render('NotifyAppBundle:Comment:show.html.twig', [
+        return $this->render('NotifyAppBundle:Feedback:show.html.twig', [
             'entity' => $entity,
         ]);
     }
 
     /**
-     * @param Comment $comment
+     * @param Feedback $feedback
      *
      * @return Response
      */
-    public function getCodeAction(Comment $comment)
+    public function getCodeAction(Feedback $feedback)
     {
-        if ($comment->getConsoleLog()) {
-            $comment->setConsoleLog('true');
+        if ($feedback->getConsoleLog()) {
+            $feedback->setConsoleLog('true');
         } else {
-            $comment->setConsoleLog('false');
+            $feedback->setConsoleLog('false');
         }
 
-        return $this->render('NotifyAppBundle:Comment:getCode.html.twig', [
-            'comment' => $comment,
+        return $this->render('NotifyAppBundle:Feedback:getCode.html.twig', [
+            'feedback' => $feedback,
         ]);
     }
 }
